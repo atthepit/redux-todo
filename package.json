@@ -8,12 +8,23 @@
   },
   "author": "Pedro Paredes <ppa2290@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
   "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
     "eslint": "^3.9.1",
-    "eslint-plugin-react": "^6.5.0"
+    "eslint-plugin-react": "^6.5.0",
+    "webpack": "^1.13.3"
   },
   "scripts": {
     "lint": "eslint src/**/*.js",
-    "lint:fix": "eslint src/**/*.js --fix"
+    "lint:fix": "eslint src/**/*.js --fix",
+    "build": "webpack -d"
   }
 }
