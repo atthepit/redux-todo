@@ -1,0 +1,19 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:mesmerismo/react-boilerplate.git",
+    "type": "git"
+  },
+  "author": "Pedro Paredes <ppa2290@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-plugin-react": "^6.5.0"
+  },
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
+  }
+}
