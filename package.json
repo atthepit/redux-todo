@@ -9,14 +9,8 @@
   "author": "Pedro Paredes <ppa2290@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "extend-tape": "^1.2.0",
     "react": "^15.3.2",
-    "react-addons-test-utils": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-unit": "^2.0.0",
-    "tape": "^4.6.2",
-    "tape-jsx-equals": "^1.0.0",
-    "webpack-dev-server": "^1.16.2"
+    "react-dom": "^15.3.2"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -26,14 +20,24 @@
     "babel-preset-react": "^6.16.0",
     "eslint": "^3.9.1",
     "eslint-plugin-react": "^6.5.0",
+    "react-unit": "^2.0.0",
+    "react-addons-test-utils": "^15.3.2",
+    "tape": "^4.6.2",
+    "tape-jsx-equals": "^1.0.0",
+    "extend-tape": "^1.2.0",
     "faucet": "^0.0.1",
-    "webpack": "^1.13.3"
+    "express": "^4.14.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.1",
+    "react-hot-loader": "^3.0.0-beta.6"
   },
   "scripts": {
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
     "build": "webpack -d",
     "test": "tape -r babel-register tests/**/*.spec.js | faucet",
-    "start": "webpack-dev-server"
+    "start": "node server.js"
   }
 }
