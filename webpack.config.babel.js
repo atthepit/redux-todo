@@ -5,6 +5,7 @@ const config = {
     output: {
         path: 'dist',
         filename: 'bundle.js',
+        publicPath: 'dist',
     },
     module: {
         loaders: [
@@ -14,6 +15,9 @@ const config = {
                 include: [path.join(__dirname, 'src')],
             },
         ],
+    },
+    devServer: {
+        inline: true,
     },
 }
 

@@ -15,7 +15,8 @@
     "react-dom": "^15.3.2",
     "react-unit": "^2.0.0",
     "tape": "^4.6.2",
-    "tape-jsx-equals": "^1.0.0"
+    "tape-jsx-equals": "^1.0.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -32,6 +33,7 @@
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
     "build": "webpack -d",
-    "test": "tape -r babel-register tests/**/*.spec.js | faucet"
+    "test": "tape -r babel-register tests/**/*.spec.js | faucet",
+    "start": "webpack-dev-server"
   }
 }
