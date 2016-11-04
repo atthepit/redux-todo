@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const validate = require('webpack-validator')
 
 const config = {
     devtool: 'eval',
@@ -11,7 +12,7 @@ const config = {
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/static',
+        publicPath: '/static/',
     },
     module: {
         loaders: [
@@ -34,4 +35,4 @@ const config = {
     ],
 }
 
-module.exports = config
+module.exports = validate(config)
