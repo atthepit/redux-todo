@@ -8,6 +8,7 @@ module.exports = {
     "extends": [
         "eslint:recommended",
         "plugin:import/errors",
+        "plugin:react/recommended",
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -21,23 +22,29 @@ module.exports = {
     ],
     "settings": {
         "import/resolver": "webpack",
+        "react": {
+            "createClass": "createClass",
+            "pragma": "React",
+            "version": "15.0",
+        }
     },
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "never"
-        ],
-        "object-curly-spacing": ["error", "always"],
         "comma-dangle": ["error", "always-multiline"],
-        "react/jsx-uses-react": 1,
-        "react/jsx-uses-vars": 1,
+        "indent": ["error", 2],
+        "object-curly-spacing": ["error", "always"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "never"],
+        // React plugin rules
+        "react/jsx-boolean-value": ["error", "always"],
+        "react/jsx-closing-bracket-location": ["error", {
+            "selfClosing": "after-props",
+        }],
+        "react/jsx-curly-spacing": [2, "always"],
+        "react/jsx-first-prop-new-line": ["error", "multiline"],
+        "react/jsx-indent": ["error", 2],
+        "react/jsx-indent-props": ["error", 2],
+        "react/jsx-no-literals": 1,
+        "react/jsx-sort-props": 2,
+        "react/jsx-space-before-closing": ["error", "always"],
     }
 };
