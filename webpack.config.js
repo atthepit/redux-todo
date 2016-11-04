@@ -21,6 +21,13 @@ const config = {
                 include: [path.join(__dirname, 'src')],
             },
         ],
+        preLoaders: [
+            {
+                test: /\.jsx?$/,
+                loaders: ['eslint'],
+                include: [path.join(__dirname, 'src')],
+            },
+        ],
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
