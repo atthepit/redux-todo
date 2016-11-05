@@ -1,9 +1,9 @@
 {
-  "name": "react-boilerplate",
+  "name": "redux-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
-    "url": "git@github.com:mesmerismo/react-boilerplate.git",
+    "url": "git@github.com:mesmerismo/redux-boilerplate.git",
     "type": "git"
   },
   "author": "Pedro Paredes <ppa2290@gmail.com>",
