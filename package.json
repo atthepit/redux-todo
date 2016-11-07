@@ -9,6 +9,7 @@
   "author": "Pedro Paredes <ppa2290@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "precommit-hook": "^3.0.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },
@@ -44,6 +45,12 @@
     "lint:tests:fix": "eslint tests/**/*.js --fix",
     "build": "webpack -d",
     "test": "tape -r babel-register tests/**/*.spec.js | faucet",
-    "start": "node server.js"
-  }
+    "start": "node server.js",
+    "validate": "npm ls"
+  },
+  "pre-commit": [
+    "lint",
+    "lint:tests",
+    "test"
+  ]
 }
