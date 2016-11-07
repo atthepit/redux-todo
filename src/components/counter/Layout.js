@@ -1,32 +1,18 @@
-import React from 'react'
+import { connect } from 'react-redux'
+
+import { increment, decrement } from '../../actions/counter'
 import Counter from './Counter'
 
-const Layout = React.createClass({
-  getInitialState() {
-    return {
-      counter: 0,
-    }
-  },
-  decrement(counter) {
-    this.setState({
-      counter: counter - 1,
-    })
-  },
-  increment(counter) {
-    this.setState({
-      counter: counter + 1,
-    })
-  },
-  render() {
-    const { counter } = this.state
-
-    return (
-      <Counter
-        count={ counter }
-        decrement={ () => this.decrement(counter) }
-        increment={ () => this.increment(counter) } />
-    )
-  },
+const mapStateToProps = (state) => ({
+  count: state,
 })
 
-export default Layout
+const mapDispatchToProps = (dispatch) => ({
+  increment: () => dispatch(increment()),
+  decrement: () => dispatch(decrement()),
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Counter)
