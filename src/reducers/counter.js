@@ -1,3 +1,6 @@
+export const INCREMENT = 'INCREMENT'
+export const DECREMENT = 'DECREMENT'
+
 function counter(state = 0, action) {
   switch (action.type) {
   case 'INCREMENT':
