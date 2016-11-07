@@ -28,6 +28,7 @@
     "express": "^4.14.0",
     "extend-tape": "^1.2.0",
     "faucet": "^0.0.1",
+    "precommit-hook": "^3.0.0",
     "react-addons-test-utils": "^15.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-unit": "^2.0.0",
@@ -46,6 +47,12 @@
     "lint:tests:fix": "eslint tests/**/*.js --fix",
     "build": "webpack -d",
     "test": "tape -r babel-register tests/**/*.spec.js | faucet",
-    "start": "node server.js"
-  }
+    "start": "node server.js",
+    "validate": "npm ls"
+  },
+  "pre-commit": [
+    "lint",
+    "lint:tests",
+    "test"
+  ]
 }
