@@ -9,7 +9,6 @@ import jsxEquals from 'tape-jsx-equals'
 const test = addAssertions(tape, { jsxEquals })
 
 import Root from '../../src/components/Root'
-import CounterLayout from '../../src/components/counter/Layout'
 
 test('Test Root component', (assert) => {
   // Shallow rendering: Render React element only *one* level deep
@@ -24,7 +23,6 @@ test('Test Root component', (assert) => {
     renderer.getRenderOutput(),
     <div>
       <h1>{'Hello World!'}</h1>
-      <CounterLayout />
     </div>
   )
 

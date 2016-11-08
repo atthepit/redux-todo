@@ -1,5 +1,3 @@
-import counter from './counter'
-
-const root = counter
+const root = (state) => state
 
 export default root
