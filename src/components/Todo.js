@@ -3,9 +3,9 @@ import React from 'react'
 const Todo = ({ todo, onClick }) => {
   const active = { textDecoration: todo.complete ? 'line-through' : 'none' }
   return (
-    <div onClick={ () => onClick(todo.id) } style={ active }>
+    <li onClick={ () => onClick(todo.id) } style={ active }>
       { todo.text }
-    </div>
+    </li>
   )
 }
 
@@ -15,7 +15,7 @@ Todo.prototype.propTypes = {
     title: React.PropTypes.string,
     complete: React.PropTypes.bool,
   }).isRequired,
-  onClick: React.PropTypes.func,
+  onClick: React.PropTypes.func.isRequired,
 }
 
 export default Todo

@@ -1,5 +1,5 @@
-import todo from './todo'
+import todos from './todos'
 
-const root = todo
+const root = todos
 
 export default root

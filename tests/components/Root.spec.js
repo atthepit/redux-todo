@@ -9,7 +9,7 @@ import jsxEquals from 'tape-jsx-equals'
 const test = addAssertions(tape, { jsxEquals })
 
 import Root from '../../src/components/Root'
-import TodoLayout from '../../src/components/TodoLayout'
+import TodosLayout from '../../src/components/TodosLayout'
 
 test('Test Root component', (assert) => {
   // Shallow rendering: Render React element only *one* level deep
@@ -24,7 +24,7 @@ test('Test Root component', (assert) => {
     renderer.getRenderOutput(),
     <div>
       <h1>{'Hello World!'}</h1>
-      <TodoLayout />
+      <TodosLayout />
     </div>
   )
 
