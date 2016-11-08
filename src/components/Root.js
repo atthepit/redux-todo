@@ -1,10 +1,10 @@
 import React from 'react'
-import TodoLayout from './TodoLayout'
+import TodosLayout from './TodosLayout'
 
 const Root = () =>
   <div>
     <h1>{'Hello World!'}</h1>
-    <TodoLayout />
+    <TodosLayout />
   </div>
 
 export default Root

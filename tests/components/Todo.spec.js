@@ -20,9 +20,9 @@ test('Test Todo component', (assert) => {
 
   assert.jsxEquals(
     renderer.getRenderOutput(),
-    <div onClick={ () => props.onClick } style={ styleInactive }>
+    <li onClick={ () => props.onClick } style={ styleInactive }>
       { props.todo.text }
-    </div>
+    </li>
   )
 
   assert.end()
