@@ -1,3 +1,5 @@
-const root = (state) => state
+import todo from './todo'
+
+const root = todo
 
 export default root

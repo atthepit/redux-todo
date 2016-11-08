@@ -7,7 +7,11 @@ import createStore from './store/'
 import Root from './components/Root'
 
 const rootEl = document.getElementById('root')
-const store = createStore()
+const store = createStore({
+  id: 0,
+  text: 'Hello world',
+  complete: false,
+})
 
 render(
   <Provider store={ store }>
