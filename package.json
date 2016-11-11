@@ -9,9 +9,11 @@
   "author": "Pedro Paredes <ppa2290@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "precommit-hook": "^3.0.0",
+    "babel-jest": "^17.0.0",
+    "jest": "^17.0.0",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-test-renderer": "^15.3.2"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -27,6 +29,7 @@
     "express": "^4.14.0",
     "extend-tape": "^1.2.0",
     "faucet": "^0.0.1",
+    "precommit-hook": "^3.0.0",
     "react-addons-test-utils": "^15.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-unit": "^2.0.0",
@@ -40,17 +43,15 @@
   },
   "scripts": {
     "lint": "eslint src/**/*.js",
-    "lint:tests": "eslint tests/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
-    "lint:tests:fix": "eslint tests/**/*.js --fix",
     "build": "webpack -d",
-    "test": "tape -r babel-register tests/**/*.spec.js | faucet",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
     "start": "node server.js",
     "validate": "npm ls"
   },
   "pre-commit": [
     "lint",
-    "lint:tests",
     "test"
   ]
 }
