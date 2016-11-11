@@ -1,5 +1,5 @@
 import React from 'react'
-import CounterLayout from './counter/Layout'
+import CounterLayout from '../containers/Layout'
 
 const Root = () =>
   <div>
