@@ -1,0 +1,27 @@
+exports[`Test Root component renders correctly 1`] = `
+<div>
+  <h1>
+    Hello World!
+  </h1>
+  <ul>
+    <li
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }>
+      Hello world
+    </li>
+    <li
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "line-through",
+        }
+      }>
+      Hello!
+    </li>
+  </ul>
+</div>
+`;

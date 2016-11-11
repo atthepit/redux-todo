@@ -1,0 +1,14 @@
+exports[`Todo action creators Add todo 1`] = `
+Object {
+  "id": 0,
+  "text": "Hello world",
+  "type": "ADD_TODO",
+}
+`;
+
+exports[`Todo action creators Toggle todo 1`] = `
+Object {
+  "id": 0,
+  "type": "TOGGLE_TODO",
+}
+`;

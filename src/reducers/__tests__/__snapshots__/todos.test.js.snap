@@ -1,0 +1,59 @@
+exports[`Test todos reducer add another todo 1`] = `
+Array [
+  Object {
+    "complete": false,
+    "id": 0,
+    "text": "Hello world",
+  },
+  Object {
+    "complete": true,
+    "id": 1,
+    "text": "Hello!",
+  },
+  Object {
+    "complete": false,
+    "id": 2,
+    "text": "Hi there!",
+  },
+]
+`;
+
+exports[`Test todos reducer add todo 1`] = `
+Array [
+  Object {
+    "complete": false,
+    "id": 0,
+    "text": "Hi there!",
+  },
+]
+`;
+
+exports[`Test todos reducer toggle todo 1`] = `
+Array [
+  Object {
+    "complete": false,
+    "id": 0,
+    "text": "Hello world",
+  },
+  Object {
+    "complete": false,
+    "id": 1,
+    "text": "Hello!",
+  },
+]
+`;
+
+exports[`Test todos reducer toggle todo 2`] = `
+Array [
+  Object {
+    "complete": false,
+    "id": 0,
+    "text": "Hello world",
+  },
+  Object {
+    "complete": false,
+    "id": 1,
+    "text": "Hello!",
+  },
+]
+`;

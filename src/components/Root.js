@@ -1,5 +1,5 @@
 import React from 'react'
-import TodosLayout from './TodosLayout'
+import TodosLayout from '../containers/TodosLayout'
 
 const Root = () =>
   <div>

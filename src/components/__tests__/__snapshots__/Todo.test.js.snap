@@ -1,0 +1,11 @@
+exports[`Test Todo component renders correctly 1`] = `
+<li
+  onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }>
+  Hello world
+</li>
+`;

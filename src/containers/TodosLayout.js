@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { toggleTodo } from '../actions/todo'
-import Todos from './Todos'
+import Todos from '../components/Todos'
 
 const mapStateToProps = (state) => ({
   todos: state,

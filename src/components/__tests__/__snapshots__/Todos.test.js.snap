@@ -1,0 +1,22 @@
+exports[`Test Todos component renders correctly 1`] = `
+<ul>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }>
+    Hello world
+  </li>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "line-through",
+      }
+    }>
+    Hello!
+  </li>
+</ul>
+`;
