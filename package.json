@@ -38,7 +38,7 @@
   },
   "scripts": {
     "lint": "eslint src/**/*.js",
-    "lint:fix": "eslint src/**/*.js --fix",
+    "lint:fix": "npm run lint -- --fix",
     "build": "webpack -d",
     "test": "jest",
     "test:watch": "npm test -- --watch",
