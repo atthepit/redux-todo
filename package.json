@@ -9,7 +9,6 @@
   "author": "Pedro Paredes <ppa2290@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "precommit-hook": "^3.0.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
@@ -17,6 +16,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
+    "babel-jest": "^17.0.0",
     "babel-loader": "^6.2.7",
     "babel-plugin-transform-object-rest-spread": "^6.16.0",
     "babel-preset-latest": "^6.16.0",
@@ -27,14 +27,12 @@
     "eslint-plugin-import": "^2.1.0",
     "eslint-plugin-react": "^6.5.0",
     "express": "^4.14.0",
-    "extend-tape": "^1.2.0",
-    "faucet": "^0.0.1",
+    "jest": "^17.0.0",
     "precommit-hook": "^3.0.0",
     "react-addons-test-utils": "^15.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
-    "react-unit": "^2.0.0",
-    "tape": "^4.6.2",
-    "tape-jsx-equals": "^1.0.0",
+    "react-test-renderer": "^15.3.2",
+    "redux-mock-store": "^1.2.1",
     "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-dev-server": "^1.16.2",
@@ -43,17 +41,15 @@
   },
   "scripts": {
     "lint": "eslint src/**/*.js",
-    "lint:tests": "eslint tests/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
-    "lint:tests:fix": "eslint tests/**/*.js --fix",
     "build": "webpack -d",
-    "test": "tape -r babel-register tests/**/*.spec.js | faucet",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
     "start": "node server.js",
     "validate": "npm ls"
   },
   "pre-commit": [
     "lint",
-    "lint:tests",
     "test"
   ]
 }

@@ -1,0 +1,11 @@
+exports[`Counter action creators decrement 1`] = `
+Object {
+  "type": "DECREMENT",
+}
+`;
+
+exports[`Counter action creators increment 1`] = `
+Object {
+  "type": "INCREMENT",
+}
+`;

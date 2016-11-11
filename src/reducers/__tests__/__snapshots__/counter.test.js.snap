@@ -1,0 +1,5 @@
+exports[`Counter reducer Test decrement counter 1`] = `0`;
+
+exports[`Counter reducer Test increment counter 1`] = `1`;
+
+exports[`Counter reducer undefined action 1`] = `0`;
