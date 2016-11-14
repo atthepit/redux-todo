@@ -14,10 +14,13 @@ beforeEach(() => {
 
 describe(`Test Root component`, () => {
   it(`renders correctly`, () => {
-    const store = mockStore([
-      { id: 0, text: `Hello world`, complete: false },
-      { id: 1, text: `Hello!`, complete: true },
-    ])
+    const store = mockStore({
+      todos: [
+        { id: 0, text: `Hello world`, complete: false },
+        { id: 1, text: `Hello world 2`, complete: true },
+      ],
+      visibilityFilter: `SHOW_ALL`,
+    })
 
     const tree = renderer.create(
       <Provider store={ store }>

@@ -1,0 +1,33 @@
+exports[`Test todo reducer add todo 1`] = `
+Object {
+  "complete": false,
+  "id": 0,
+  "text": "Hello world",
+}
+`;
+
+exports[`Test todo reducer initial state 1`] = `Object {}`;
+
+exports[`Test todo reducer toggle 2 times todo 1`] = `
+Object {
+  "complete": true,
+  "id": 0,
+  "text": "Hello world",
+}
+`;
+
+exports[`Test todo reducer toggle 2 times todo 2`] = `
+Object {
+  "complete": true,
+  "id": 0,
+  "text": "Hello world",
+}
+`;
+
+exports[`Test todo reducer toggle todo 1`] = `
+Object {
+  "complete": true,
+  "id": 0,
+  "text": "Hello world",
+}
+`;

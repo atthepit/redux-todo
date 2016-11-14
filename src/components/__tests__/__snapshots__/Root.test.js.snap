@@ -20,8 +20,22 @@ exports[`Test Root component renders correctly 1`] = `
           "textDecoration": "line-through",
         }
       }>
-      Hello!
+      Hello world 2
     </li>
   </ul>
+  <div>
+    <button
+      onClick={[Function]}>
+      Show All
+    </button>
+    <button
+      onClick={[Function]}>
+      Active
+    </button>
+    <button
+      onClick={[Function]}>
+      Completed
+    </button>
+  </div>
 </div>
 `;
