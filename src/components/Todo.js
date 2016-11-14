@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Todo = ({ todo, onClick }) => {
-  const active = { textDecoration: todo.complete ? 'line-through' : 'none' }
+  const active = { textDecoration: todo.complete ? `line-through` : `none` }
   return (
     <li onClick={ onClick } style={ active }>
       { todo.text }

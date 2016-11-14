@@ -2,10 +2,10 @@ import React from 'react'
 import Todo from '../Todo'
 import renderer from 'react-test-renderer'
 
-describe('Test Todo component', () => {
-  it('renders correctly', () =>{
+describe(`Test Todo component`, () => {
+  it(`renders correctly`, () =>{
     const props = {
-      todo: { id: 0, text: 'Hello world', complete: false },
+      todo: { id: 0, text: `Hello world`, complete: false },
       onClick: jest.fn(),
     }
 

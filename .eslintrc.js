@@ -33,7 +33,7 @@ module.exports = {
     "comma-dangle": ["error", "always-multiline"],
     "indent": ["error", 2],
     "object-curly-spacing": ["error", "always"],
-    "quotes": ["error", "single"],
+    "quotes": ["error", "backtick"],
     "semi": ["error", "never"],
     // React plugin rules
     "react/jsx-boolean-value": ["error", "always"],

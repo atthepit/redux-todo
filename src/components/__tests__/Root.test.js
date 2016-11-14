@@ -12,11 +12,11 @@ beforeEach(() => {
 })
 
 
-describe('Test Root component', () => {
-  it('renders correctly', () => {
+describe(`Test Root component`, () => {
+  it(`renders correctly`, () => {
     const store = mockStore([
-      { id: 0, text: 'Hello world', complete: false },
-      { id: 1, text: 'Hello!', complete: true },
+      { id: 0, text: `Hello world`, complete: false },
+      { id: 1, text: `Hello!`, complete: true },
     ])
 
     const tree = renderer.create(
