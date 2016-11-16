@@ -7,13 +7,7 @@ import createStore from './store/'
 import Root from './components/Root'
 
 const rootEl = document.getElementById(`root`)
-const store = createStore({
-  todos: [
-    { id: 0, text: `Hello world`, complete: false },
-    { id: 1, text: `Hello world 2`, complete: true },
-  ],
-  visibilityFilter: `SHOW_ALL`,
-})
+const store = createStore()
 
 render(
   <Provider store={ store }>
