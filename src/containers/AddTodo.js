@@ -1,9 +1,10 @@
  import { connect } from 'react-redux'
+ import { v4 } from 'uuid'
  import { addTodo } from '../actions/todo'
  import AddTodo from '../components/AddTodo'
 
  const mapDispatchToProps = (dispatch) => ({
-   addTodo: (id, text) => dispatch(addTodo(id, text)),
+   addTodo: (text) => dispatch(addTodo(v4(), text)),
  })
 
  export default connect(

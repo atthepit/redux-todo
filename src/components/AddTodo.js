@@ -1,5 +1,5 @@
 import React from 'react'
-import { v4 } from 'uuid'
+
 
 const AddTodo = ({ addTodo }) => {
   let textInput = undefined
@@ -8,9 +8,7 @@ const AddTodo = ({ addTodo }) => {
     if (textInput == null)
       return
 
-    const id = v4()
-    const text = textInput.value
-    addTodo(id, text)
+    addTodo(textInput.value)
     textInput.value = ``
   }
 
