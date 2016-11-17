@@ -3,6 +3,15 @@ exports[`Test Root component renders correctly 1`] = `
   <h1>
     Hello World!
   </h1>
+  <form
+    onSubmit={[Function]}>
+    <input
+      type="text" />
+    <button
+      type="submit">
+      Add
+    </button>
+  </form>
   <ul>
     <li
       onClick={[Function]}

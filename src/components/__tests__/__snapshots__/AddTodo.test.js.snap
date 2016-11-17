@@ -1,0 +1,11 @@
+exports[`Test AddTodo component should render correctly 1`] = `
+<form
+  onSubmit={[Function]}>
+  <input
+    type="text" />
+  <button
+    type="submit">
+    Add
+  </button>
+</form>
+`;
