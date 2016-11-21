@@ -11,13 +11,10 @@ if (environment === `development`) {
   middlewares.push(logger)
 }
 
-const initialState = {
-  todos: [
-    { id: 0, text: `Hello world`, complete: false },
-    { id: 1, text: `Hello world 2`, complete: true },
-  ],
-  visibilityFilter: `SHOW_ALL`,
-}
+const initialState = [
+  { id: 0, text: `Hello world`, complete: false },
+  { id: 1, text: `Hello world 2`, complete: true },
+]
 
 export default createStore.bind(
   null,

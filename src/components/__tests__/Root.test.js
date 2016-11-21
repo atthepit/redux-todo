@@ -14,17 +14,17 @@ beforeEach(() => {
 
 describe(`Test Root component`, () => {
   it(`renders correctly`, () => {
-    const store = mockStore({
-      todos: [
-        { id: 0, text: `Hello world`, complete: false },
-        { id: 1, text: `Hello world 2`, complete: true },
-      ],
-      visibilityFilter: `SHOW_ALL`,
-    })
+    const store = mockStore([
+      { id: 0, text: `Hello world`, complete: false },
+      { id: 1, text: `Hello world 2`, complete: true },
+    ])
+    const routerParams = {
+      filter: `all`
+    }
 
     const tree = renderer.create(
       <Provider store={ store }>
-        <Root />
+        <Root params={ routerParams } />
       </Provider>
     ).toJSON()
     expect(tree).toMatchSnapshot()

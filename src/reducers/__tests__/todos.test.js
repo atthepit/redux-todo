@@ -48,7 +48,7 @@ describe(`Test getVisibleTodos`, () => {
       { id: 0, text: `Hello world`, complete: false },
       { id: 1, text: `Hello world 2`, complete: true },
     ]
-    const filter = `SHOW_ALL`
+    const filter = `all`
 
     expect(
       getVisibleTodos(state, filter)
@@ -60,7 +60,7 @@ describe(`Test getVisibleTodos`, () => {
       { id: 0, text: `Hello world`, complete: false },
       { id: 1, text: `Hello world 2`, complete: true },
     ]
-    const filter = `SHOW_ACTIVE`
+    const filter = `active`
 
     expect(
       getVisibleTodos(state, filter)
@@ -74,7 +74,7 @@ describe(`Test getVisibleTodos`, () => {
       { id: 0, text: `Hello world`, complete: false },
       { id: 1, text: `Hello world 2`, complete: true },
     ]
-    const filter = `SHOW_COMPLETED`
+    const filter = `completed`
 
     expect(
       getVisibleTodos(state, filter)

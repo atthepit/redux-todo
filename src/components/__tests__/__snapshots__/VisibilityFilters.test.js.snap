@@ -1,16 +1,19 @@
 exports[`VisibilityFilters component renders correctly 1`] = `
 <div>
-  <button
-    onClick={[Function]}>
+  <a
+    onClick={[Function]}
+    style={Object {}}>
     Show All
-  </button>
-  <button
-    onClick={[Function]}>
+  </a>
+  <a
+    onClick={[Function]}
+    style={Object {}}>
     Active
-  </button>
-  <button
-    onClick={[Function]}>
+  </a>
+  <a
+    onClick={[Function]}
+    style={Object {}}>
     Completed
-  </button>
+  </a>
 </div>
 `;

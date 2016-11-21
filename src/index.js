@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { AppContainer } from 'react-hot-loader'
+import { Router, Route, hashHistory } from 'react-router'
 
 import createStore from './store/'
 import Root from './components/Root'
@@ -11,7 +12,9 @@ const store = createStore()
 
 render(
   <Provider store={ store }>
-    <Root />
+    <Router history={ hashHistory }>
+      <Route component={ Root } path="/(:filter)" />
+    </Router>
   </Provider>,
   rootEl
 )
@@ -25,7 +28,9 @@ if (module.hot) {
     render(
       <AppContainer>
         <Provider store={ store }>
-          <NextRoot />
+          <Router history={ hashHistory }>
+            <Route component={ NextRoot } path="/(:filter)" />
+          </Router>
         </Provider>
       </AppContainer>,
       rootEl

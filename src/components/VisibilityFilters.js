@@ -1,14 +1,11 @@
 import React from 'react'
+import NavLink from './NavLink'
 
-const VisibilityFilters = ({ onClick }) =>
+const VisibilityFilters = () =>
   <div>
-    <button onClick={ () => onClick(`SHOW_ALL`) } >{`Show All`}</button>
-    <button onClick={ () => onClick(`SHOW_ACTIVE`) } >{`Active`}</button>
-    <button onClick={ () => onClick(`SHOW_COMPLETED`) } >{`Completed`}</button>
+    <NavLink to="/" >{`Show All`}</NavLink>
+    <NavLink to="/active" >{`Active`}</NavLink>
+    <NavLink to="/completed" >{`Completed`}</NavLink>
   </div>
-
-VisibilityFilters.propTypes = {
-  onClick: React.PropTypes.func,
-}
 
 export default VisibilityFilters
