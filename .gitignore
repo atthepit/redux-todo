@@ -38,3 +38,5 @@ jspm_packages
 
 # Webpack compiled files folder (check webpack.config ~> output.path)
 dist/
+
+.jshint*
